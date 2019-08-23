@@ -10,7 +10,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDopdown">
                   <a href="{{ route('users.show', Auth::user()) }}" class="dropdown-item">Personal Center</a>
-                  <a href="#" class="dropdown-item">Edit Profile</a>
+                  <a href="{{ route('users.edit', Auth::user()) }}" class="dropdown-item">Edit Profile</a>
                   <div class="dropdown-divider"></div>
                   <a href="#" class="dropdown-item" id="logout">
                     <form action="{{ route('logout') }}" method="POST">
